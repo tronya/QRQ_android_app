@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">QRQ</string>
+
+    <string name="menu_main">Main</string>
+    <string name="menu_quest">Quests</string>
+    <string name="menu_users">All Users</string>
+    <string name="menu_news">News</string>
+    <string name="menu_user_page">User</string>
+    <string name="menu_exit">Exit</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="login_btn">Login</string>
+
+    <string name="login_text">Для регистрации в нащем Приложении, мы используем авторизацию через Facebook</string>
+    <string name="gender">Пол</string>
+    <string name="email">E-mail</string>
+    <string name="user_link">Ссылка на профиль</string>
+    <string name="user_name">Имя</string>
+    <string name="user_lastname">Фамилия</string>
+    <string name="user_cordinats">Местоположение</string>
+
+
+    <string name="list_quest_started">QUEST STARTED</string>
+    <string name="list_start_at">start:</string>
+
+
+
+    <string name="app_id">1626186040998763</string>
+</resources>

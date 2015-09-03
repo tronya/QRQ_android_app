@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/detail_user_image"
+            android:layout_gravity="center_horizontal" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Textz"
+                    android:id="@+id/user_detail_name"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/detail_user_nick"
+                    android:textColor="@color/textColorPrimary" />
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="@string/user_name"
+                android:textColor="@color/ColorPrimaryDark" />
+            <TextView
+                android:id="@+id/user_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/ColorPrimary"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textIsSelectable="false" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="@string/user_lastname"
+                android:textColor="@color/ColorPrimaryDark" />
+            <TextView
+                android:id="@+id/user_LastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/ColorPrimary"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textIsSelectable="false" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="@string/gender"
+                android:textColor="@color/ColorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/userGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/ColorPrimary"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="@string/email"
+                android:textColor="@color/ColorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/ColorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="@string/user_link"
+                android:textColor="@color/ColorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/det_user_serlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/ripple_material_light"
+                android:text="link"
+                android:singleLine="true"
+                android:inputType="textUri" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="@string/user_cordinats"
+                android:textColor="@color/ColorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/det_user_coordinats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:textColor="@color/ColorPrimary"
+                android:textStyle="bold" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="@string/com_facebook_loginview_log_out_button"
+                android:textColor="@color/com_facebook_share_button_text_color"
+                android:textSize="@dimen/com_facebook_share_button_text_size"
+                android:textStyle="bold"
+
+                android:background="@drawable/com_facebook_button_background"
+                android:drawableLeft="@drawable/com_facebook_button_icon"
+                android:drawablePadding="@dimen/com_facebook_share_button_compound_drawable_padding"
+                android:paddingLeft="@dimen/com_facebook_share_button_padding_left"
+                android:paddingTop="@dimen/com_facebook_share_button_padding_top"
+                android:paddingRight="@dimen/com_facebook_share_button_padding_right"
+                android:paddingBottom="@dimen/com_facebook_share_button_padding_bottom"
+                android:onClick="onLogoutClick"
+                android:layout_margin="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
