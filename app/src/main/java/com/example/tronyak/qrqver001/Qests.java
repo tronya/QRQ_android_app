@@ -51,6 +51,7 @@ public class Qests extends ListFragment {
         this.setRetainInstance(true);
     }
 
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View rootView = inflater.inflate(R.layout.quests_page, container, false);
         mAdapter = new CustomParseQueryAdapter(getActivity());

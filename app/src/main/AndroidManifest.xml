@@ -35,7 +35,6 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".ZBarScannerActivity"
-            android:screenOrientation="landscape"
             android:label="QRQ" />
         <activity android:name="com.facebook.FacebookActivity"
             android:configChanges=

@@ -96,10 +96,17 @@ public class MainActivity extends ActionBarActivity
             case ZBAR_QR_SCANNER_REQUEST:
                 if (resultCode == RESULT_OK) {
                     result_code = data.getStringExtra(ZBarConstants.SCAN_RESULT);
+
+                    Fragment search_page = new SearchPage();
                     fTrans = getFragmentManager().beginTransaction();
                     fTrans.setCustomAnimations(R.animator.slide_in_left, R.animator.slide_in_right);
-                    Fragment users_page = new All_users_page();
-                    Log.d("tronyakz", result_code);
+
+                    Bundle args = new Bundle();
+                    args.putString("qr_id", result_code);
+                    search_page.setArguments(args);
+                    fTrans.replace(R.id.container, search_page);
+                    fTrans.commit();
+
                 }
         }
     }
